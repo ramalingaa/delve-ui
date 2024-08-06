@@ -3,7 +3,7 @@ import { Todo } from "../../types";
 export const TodoSection: React.FC<{ key: number, todo: Todo }> = ({ key, todo }) => {
 
     return (
-        <div key={key} className="bg-gray-800  rounded-lg flex flex-col gap-2">
+        <div key={key} className="bg-gray-800  rounded-lg flex flex-col gap-2  hover:bg-gray-900">
             <div className="px-4">
                 <svg width="42" height="43" viewBox="0 0 42 43" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect x="11.5" y="12.5" width="19" height="19" rx="4.5" stroke="url(#paint0_linear_6_2394)" />
@@ -51,7 +51,7 @@ export const TodoSection: React.FC<{ key: number, todo: Todo }> = ({ key, todo }
                     {todo.status === 'complete' ? 'Complete' : todo.dueDate ? `Due ${todo.dueDate}` : 'Due ASAP'}
                 </span>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-4">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                    <path className="fill-current text-gray-400 cursor-pointer hover:text-white" strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
                 </svg>
 
 
