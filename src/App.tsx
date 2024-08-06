@@ -14,7 +14,7 @@ const App: React.FC = () => {
       <Header activePage={activePage} />
       <div className="h-[4px] bg-gray-800"></div>
 
-      <div className="flex flex-col md:flex-row">
+      <div className="flex flex-col md:flex-row main-container">
         <main className="flex-1 p-6 flex justify-center">
           <ProfileGrid />
         </main>
